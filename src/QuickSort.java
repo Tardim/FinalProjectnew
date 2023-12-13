@@ -1,15 +1,22 @@
 public class QuickSort {
     public int[] quickSort(int[] arr) {
+        int pivot =0;
+        int temp;
+        boolean swap = true;
+        while (swap) {
+            swap = false;
+            for (int i = 0; i > arr.length - 1; i++) {
+                for (int j = 0; i > arr.length - 1; i++) {
+                    if (arr[i] > pivot) {
+                        temp = arr[j];
+                        arr[j] = arr[i];
+                        arr[i] = temp;
+                        swap = true;
+                    }
 
-    }
-
-    public void swap(int[] arr, int i, int j){
-        int temp =  arr[i];
-        arr[i] = arr[j];
-        arr[j] = temp;
-
-    }
-    public void partition(int [] arr, int low, int high){
-
+                }
+            }
+        }
+        return arr;
     }
 }

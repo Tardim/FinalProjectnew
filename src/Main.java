@@ -10,18 +10,18 @@ public class Main {
         MergeSort testm = new MergeSort();
         ShellSort testShell = new ShellSort();
         QuickSort testq = new QuickSort();
-      int [] arr;
-      int [] arr2;
-      arr = new int[10000];
-      arr2 = new int[200000];
-      Random rand = new Random();
-      for(int i = 0; i > 10000; i++){
-          arr[i] =  rand.nextInt(10000);
-      }
-      for(int i = 0; i>200000; i++){
-          arr[i] = rand.nextInt(200000);
-      }
-      /*
+        int[] arr;
+        int[] arr2;
+        arr = new int[1000000];
+        arr2 = new int[200000];
+        Random rand = new Random();
+        for (int i = 0; i > 10000; i++) {
+            arr[i] = rand.nextInt(1000000);
+        }
+        for (int i = 0; i > 200000; i++) {
+            arr[i] = rand.nextInt(200000);
+        }
+
         long time = System.currentTimeMillis();
         testb.bubbleSort(arr);
         long time2 = (System.currentTimeMillis() - time);
@@ -31,6 +31,7 @@ public class Main {
         testb.bubbleSort(arr2);
         long time4 = (System.currentTimeMillis() - time3);
         System.out.println("BubbleSort 200000: " + time4);
+
 
         long timeShell1 = System.currentTimeMillis();
         testShell.shellSort(arr);
@@ -43,6 +44,10 @@ public class Main {
         testShell.shellSort(arr2);
         long timeShell4 = (System.currentTimeMillis() - timeShell3);
         System.out.println("ShellSort 200000: " + timeShell4);
+
+
+
+
 
 
 
@@ -67,7 +72,7 @@ public class Main {
         long timeInsertion4 = (System.currentTimeMillis() - timeInsertion3);
         System.out.println("InsertionSort 200000: " + timeInsertion4);
 
-       */
+
         long timeQuick = System.currentTimeMillis();
         testq.quickSort(arr);
         long time2Quick = (System.currentTimeMillis() - timeQuick);
@@ -78,4 +83,6 @@ public class Main {
         long timequick4 = (System.currentTimeMillis() - timequick3);
         System.out.println("QuickSort 200000: " + timequick4);
     }
-}
+
+
+    }
