@@ -45,7 +45,7 @@ public class Main {
         System.out.println("ShellSort 200000: " + timeShell4);
 
 
-       */
+
         long timeSelection = System.currentTimeMillis();
         tests.selectionSort(arr);
         long time2selection = (System.currentTimeMillis() - timeSelection);
@@ -56,5 +56,26 @@ public class Main {
         long timeSelection4 = (System.currentTimeMillis() - timeSelection3);
         System.out.println("SelectionSort 200000: " + timeSelection4);
 
+
+        long timeInsertion = System.currentTimeMillis();
+        testi.insertionSort(arr);
+        long time2insertion = (System.currentTimeMillis() - timeInsertion);
+            System.out.println("InsertionSort 10000: " + time2insertion);
+
+        long timeInsertion3 = System.currentTimeMillis();
+        testi.insertionSort(arr2);
+        long timeInsertion4 = (System.currentTimeMillis() - timeInsertion3);
+        System.out.println("InsertionSort 200000: " + timeInsertion4);
+
+       */
+        long timeQuick = System.currentTimeMillis();
+        testq.quickSort(arr);
+        long time2Quick = (System.currentTimeMillis() - timeQuick);
+        System.out.println("QuickSort 10000: " + time2Quick);
+
+        long timequick3 = System.currentTimeMillis();
+        testq.quickSort(arr2);
+        long timequick4 = (System.currentTimeMillis() - timequick3);
+        System.out.println("QuickSort 200000: " + timequick4);
     }
 }
